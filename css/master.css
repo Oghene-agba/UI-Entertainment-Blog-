@@ -1,0 +1,426 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+h3{
+  color: #333;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+body{
+  background-color: #efefef;
+}
+
+header{
+  background: #1876f2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-transform: capitalize;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5%;
+}
+header nav .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+header nav .logo span{
+  color: #c52400;
+}
+header nav ul li{
+  display: inline-block;
+  margin: 0px 20px 0px;
+}
+header nav ul li a{
+  color: #fff;
+}
+header nav ul li span{
+  border-bottom: 2px solid #c52400;
+  padding-bottom: 5px;
+}
+header nav .login-signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .login-signup .login,
+header nav .login-signup .signup{
+  margin-right: 25px;
+  color: #c52400;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+header nav .login-signup .signup{
+  /*for more features*/
+}
+header nav .login-signup .signup:hover{
+  /*for more features*/
+}
+header nav .user{
+  /*for more features*/
+}
+header nav .user img{
+  width: 45px;
+  border-radius: 50%;
+}
+
+/*----container and common----*/
+main .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+main .time span{
+  font-size: 15px;
+  color: #999;
+  text-transform: capitalize;
+}
+main .left-common{
+    width: 60vw;
+    margin-bottom: 20px;
+}
+
+main .right-common{
+    width: 25vw;
+    padding: 0px 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+
+/*left-content*/
+main .left-content .home{
+  width: 60vw;
+  padding: 30px;
+  background: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(../feed/course1.jpg);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+main .left-content .write-up{
+  margin-top: 45%;
+}
+main .left-content .category a{
+  color: #c52400;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 15px;
+}
+main .left-content .write-up .title{
+  padding: 20px 0px;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+/*-------trending-------*/
+main .left-content .trending .feed{
+  display: flex;
+  align-items: center;
+}
+main .left-content .trending .trend-post{
+  width: 30vw;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+main .left-content .trending .trend-post .post-feed{
+  width: 50vw;
+  height: 500px;
+  padding: 0px 5px;
+}
+main .left-content .trending .trend-post .post-feed .post{
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../feed/trend.jpg);
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+main .left-content .trending .trend-post .post-feed .post{
+  padding: 20px 10px;
+}
+main .left-content .trending .trend-post .post-feed .post a{
+  color: #c52400;
+  background: #fff;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 15px;
+}
+main .left-content .trending .trend-post .post-feed .user-time{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+main .left-content .trending .trend-post .post-feed .user-time .user img{
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main .left-content .trending .trend-post .post-feed .title{
+  width: 50%;
+  color: #999;
+}
+/*-----latest posts----*/
+main .left-content .latest .latest-post{
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+main .left-content .latest .latest-post .post-feed{
+  display: flex;
+  justify-content: center;
+}
+main .left-content .latest .latest-post .post{
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../feed/latest.jpg);
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+main .left-content .latest .latest-post .details{
+  padding: 20px;
+}
+main .left-content .latest .latest-post .details .user-time{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+main .left-content .latest .latest-post .post-feed .user-time .user img{
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main .left-content .latest .latest-post .details .title{
+  color: #999;
+}
+
+/*right-content*/
+main .right-content{
+  width: 30vw;
+  padding: 0px 30px;
+}
+main .right-content .top-tab{
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+main .right-content .tab{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .right-content .tab a{
+  color: #fff;
+  background: #1876f2;
+  border: 1px solid #fff;
+  padding: 6px 20px;
+  border-radius: 15px;
+}
+main .right-content .tab .recent{
+  color: #333;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+main .right-content .tab .recent:hover{
+  color: #fff;
+  background: #c52400;
+}
+
+main .right-content .activity{
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+main .right-content .activity .user img{
+  width: 45px;
+  border-radius: 50%;
+}
+main .right-content .activity .event-time{
+  padding-left: 20px;
+}
+main .right-content .activity .event-time .event p{
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #333;
+  text-transform: capitalize;
+}
+main .right-content .activity .event-time .time span{
+  font-size: 12px;
+  color: #999;
+}
+
+/*----explore---*/
+main .right-content .explore h3{
+  text-align: center;
+  padding: 15px 0px 0px;
+}
+main .right-content .explore .category li{
+  text-decoration: none;
+  padding: 20px 0px;
+  border-bottom: 1px solid #ddd;
+}
+main .right-content .explore .category a{
+  color: #333;
+  font-weight: bold;
+}
+main .right-content .explore .category a:hover{
+  margin-left: 15px;
+  transition: scale(.2);
+}
+/*---newsletter----*/
+main .right-content .newsletter{
+  text-align: center;
+  padding: 10px;
+}
+main .right-content .newsletter h3,
+main .right-content .newsletter h4{
+  padding: 18px 0px 10px;
+  color: #333;
+}
+main .right-content .newsletter input{
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main .right-content .newsletter input:hover{
+  letter-spacing: 1px;
+}
+main .right-content .newsletter .btn{
+  background: #1876f2;
+  color: #fff;
+}
+main .right-content .newsletter span{
+  font-size: 13px;
+}
+main .right-content .newsletter a{
+  color: #1876f2;
+}
+/*---Advertise----*/
+main .right-content .ads{
+  text-align: center;
+  padding: 10px;
+}
+main .right-content .ads h3,
+main .right-content .ads h4{
+  padding: 18px 0px 10px;
+  color: #333;
+}
+main .right-content .ads .post{
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../feed/covid.jpg);
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1);
+}
+
+/*---contact----*/
+main .right-content .contact{
+  text-align: center;
+  padding: 10px;
+}
+main .right-content .contact h3,
+main .right-content .contact h4{
+  padding: 18px 0px 10px;
+  color: #333;
+}
+main .right-content .contact input{
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+main .right-content .contact input:hover{
+  letter-spacing: 1px;
+}
+main .right-content .contact textarea{
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  resize: none;
+}
+main .right-content .contact .btn{
+  background: #1876f2;
+  color: #fff;
+}
+
+/*------footer--------*/
+footer nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5%;
+  border-top: 1px solid #ddd;
+}
+footer nav span{
+  color: #333;
+  font-weight: bold;
+}
+footer nav ul li{
+  display: inline-block;
+  padding: 0px 15px;
+  text-transform: capitalize;
+}
+footer nav ul li a{
+  color: #1876f2;
+}
+footer nav .top-btn{
+  color: #c52400;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
